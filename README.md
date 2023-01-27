@@ -45,16 +45,11 @@ int main(){
 	    	push(j);  //answer의 값보다 크기전까지 계속 스택에 값을 넣어나간다  
 	    	res[count++]='+'; j++;}
 		r=pop(); //answer값과 j값에서 서로 같은 부분을 pop처리 한다  
-		
 		if(r == answer){
-			res[count++]='-';  }
-		
-		
-		else{
+			res[count++]='-';  }else{
 			printf("NO\n");
 			free(res);
-			return 0;}
-    }
+			return 0;} }
     
     for(i=0;i<n*2;i++)
 		  printf("%c\n",res[i]);
