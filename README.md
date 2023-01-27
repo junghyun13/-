@@ -50,7 +50,7 @@ int main(){
 			free(res);
 			return 0;} }
     
-    for(i=0;i<n*2;i++) printf("%c\n",res[i]);
+    for(i=0;i<n*2;i++) {printf("%c\n",res[i]);}
     return 0;
 }
 //
