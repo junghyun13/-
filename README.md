@@ -37,7 +37,6 @@ int main(){
 	res=(char*)malloc(sizeof(char)*(n*2+1));
 	j=1;
 	count=0;
-	
 	for(i=0;i<n;i++){
 	    printf("숫자를 입력해주세요: \n");
 	    scanf("%d",&answer);
