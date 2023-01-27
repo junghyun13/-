@@ -43,18 +43,17 @@ int main(){
 	    scanf("%d",&answer);
 	    while(j <= answer){
 	    	push(j);  //answer의 값보다 크기전까지 계속 스택에 값을 넣어나간다  
-	    	result[count++]='+';
-	    	j++;
-		}
+	    	result[count++]='+'; j++;}
 		r=pop(); //answer값과 j값에서 서로 같은 부분을 pop처리 한다  
+		
 		if(r == answer){
-			result[count++]='-';  
-		}
+			result[count++]='-';  }
+		
+		
 		else{
 			printf("NO\n");
 			free(result);
-			return 0;
-		}
+			return 0;}
     }
     
     for(i=0;i<n*2;i++)
